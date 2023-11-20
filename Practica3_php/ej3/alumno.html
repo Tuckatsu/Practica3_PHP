@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Datos del alumno</title>
+        <style>
+            fieldset
+            {
+                border: black 3px solid;
+                margin: 0px;
+                padding-top: 0px;
+                width: auto;
+                height: auto;
+            }
+            #b
+            {
+                float: left;
+                
+            }
+            #c
+            {
+                float:left;
+                padding-left: 10px;
+        
+                
+            }
+        </style>
+    </head>
+    <body>
+    <form action="datos_alumno.php" method="get">
+        <fieldset>
+        <div id="a"><p>DATOS DEL ALUMNO</p></div>
+        <div id="b">
+        Nombre: <input type="text" name="nombre" required><br><br>
+        Telefono: <input type="text" name="telefono" required> 
+        Matriculado <input type="checkbox" name="matriculado" value="si"><br><br>
+        Mostrar datos: <select name="modo[]">
+            <option value="1">Por pantalla</option>
+            <option value="2">En archivo datos.txt</option>
+        </select>
+        </div>
+        <div id="c">
+            Enseñanza: <br>
+            
+            <input type="radio" name="enseñanza" value="secundaria">Secundaria     <input type="radio" name="enseñanza" value="bachillerato">Bachillerato<br>
+            <input type="radio" name="enseñanza" value="ciclo medio">Ciclo Medio    <input type="radio" name="enseñanza" value="ciclo superior">Ciclo Superior
+        </div>
+        </fieldset>
+        <input type="submit" value="Enviar Datos">
+
+          
+    </form>
+    </body>
+</html>
